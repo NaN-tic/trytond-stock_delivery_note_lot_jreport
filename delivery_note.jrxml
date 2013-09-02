@@ -274,7 +274,7 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="231" y="2" width="361" height="12"/>
+				<reportElement x="231" y="2" width="307" height="12"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
