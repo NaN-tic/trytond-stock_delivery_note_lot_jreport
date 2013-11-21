@@ -227,7 +227,9 @@
 	<pageHeader>
 		<band height="113">
 			<image>
-				<reportElement x="10" y="0" width="157" height="100" isRemoveLineWhenBlank="true" uuid="82553894-28f7-4866-a698-4566137023e3"/>
+				<reportElement x="10" y="0" width="157" height="100" isRemoveLineWhenBlank="true" uuid="82553894-28f7-4866-a698-4566137023e3">
+					<printWhenExpression><![CDATA[$F{company-logo}.length()>0]]></printWhenExpression>
+				</reportElement>
 				<imageExpression><![CDATA[$F{company-logo}]]></imageExpression>
 			</image>
 			<textField isStretchWithOverflow="true">
