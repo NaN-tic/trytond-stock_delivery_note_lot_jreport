@@ -250,12 +250,12 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{rec_name-rec_name}]]></textFieldExpression>
 			</textField>
-			<textField pattern="#,##0;-#,##0">
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="false">
 				<reportElement x="167" y="2" width="50" height="12" uuid="98823633-959c-4c83-8681-beb6bc6b6946"/>
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{quantity-quantity}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{quantity-quantity} ? $F{quantity-quantity} : '0']]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00;-#,##0.00">
 				<reportElement x="13" y="2" width="75" height="12" uuid="1d0505b8-381c-46c9-aad9-e79c28dd00c0"/>
