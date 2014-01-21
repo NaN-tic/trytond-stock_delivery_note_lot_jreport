@@ -47,6 +47,9 @@
 	<field name="company-footer" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/footer-footer]]></fieldDescription>
 	</field>
+	<field name="company-shipment_qty" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/shipment_qty-shipment_qty]]></fieldDescription>
+	</field>
 	<field name="reference-reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
 	</field>
@@ -225,15 +228,15 @@
 		</groupFooter>
 	</group>
 	<pageHeader>
-		<band height="113">
+		<band height="76">
 			<image>
-				<reportElement x="10" y="0" width="157" height="100" isRemoveLineWhenBlank="true" uuid="82553894-28f7-4866-a698-4566137023e3">
+				<reportElement x="10" y="0" width="280" height="60" isRemoveLineWhenBlank="true" uuid="82553894-28f7-4866-a698-4566137023e3">
 					<printWhenExpression><![CDATA[$F{company-logo}.length()>0]]></printWhenExpression>
 				</reportElement>
 				<imageExpression><![CDATA[$F{company-logo}]]></imageExpression>
 			</image>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="10" y="101" width="528" height="10" isRemoveLineWhenBlank="true" forecolor="#808080" uuid="2d724958-9816-4a26-8cb3-a7e273915eb4"/>
+				<reportElement x="10" y="63" width="528" height="10" isRemoveLineWhenBlank="true" forecolor="#808080" uuid="2d724958-9816-4a26-8cb3-a7e273915eb4"/>
 				<textElement textAlignment="Left">
 					<font size="7"/>
 				</textElement>
