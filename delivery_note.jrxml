@@ -50,9 +50,6 @@
 	<field name="company-shipment_qty" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/shipment_qty-shipment_qty]]></fieldDescription>
 	</field>
-	<field name="company-shipment_qty" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/company-company/shipment_qty-shipment_qty]]></fieldDescription>
-	</field>
 	<field name="reference-reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
 	</field>
