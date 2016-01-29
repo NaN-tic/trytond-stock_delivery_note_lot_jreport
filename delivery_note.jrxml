@@ -62,7 +62,7 @@
 	<field name="code-code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/code-code]]></fieldDescription>
 	</field>
-	<field name="rec_name-rec_name" class="java.lang.String">
+	<field name="product-rec_name" class="java.lang.Object">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/rec_name-rec_name]]></fieldDescription>
 	</field>
 	<field name="quantity-quantity" class="java.lang.String">
@@ -266,7 +266,7 @@
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{rec_name-rec_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{customer-lang} ? $F{product-rec_name}.$F{customer-lang} : $F{product-rec_name}.'en_US']]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="false">
 				<reportElement x="167" y="2" width="50" height="12" uuid="98823633-959c-4c83-8681-beb6bc6b6946"/>
